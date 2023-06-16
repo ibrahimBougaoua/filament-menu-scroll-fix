@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "ibrahimbougaoua/filament-menu-scroll-fix",
+    "description": "Now whene a user clicks on an item it sets focus on the selected item without the weird reloading and scrolling up the list, Especially if the user contains a lot of elements he would have to scroll the the selected element manually.",
     "keywords": [
-        ":vendor_name",
+        "ibrahimBougaoua",
         "laravel",
-        ":package_slug"
+        "filament-menu-scroll-fix"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/ibrahimbougaoua/filament-menu-scroll-fix",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Ibrahim",
+            "email": "ibrahim.bougaoua@etu.usthb.dz",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "FilamentMenuScrollFix\\FilamentMenuScrollFix\\": "src/",
+            "FilamentMenuScrollFix\\FilamentMenuScrollFix\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "FilamentMenuScrollFix\\FilamentMenuScrollFix\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "FilamentMenuScrollFix\\FilamentMenuScrollFix\\FilamentMenuScrollFixServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentMenuScrollFix": "FilamentMenuScrollFix\\FilamentMenuScrollFix\\Facades\\FilamentMenuScrollFix"
             }
         }
     },
