@@ -1,4 +1,4 @@
-# Filament menu scroll fix
+# Filament menu scroll fix.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ibrahimbougaoua/filament-menu-scroll-fix.svg?style=flat-square)](https://packagist.org/packages/ibrahimbougaoua/filament-menu-scroll-fix)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ibrahimbougaoua/filament-menu-scroll-fix/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ibrahimbougaoua/filament-menu-scroll-fix/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -6,6 +6,14 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/ibrahimbougaoua/filament-menu-scroll-fix.svg?style=flat-square)](https://packagist.org/packages/ibrahimbougaoua/filament-menu-scroll-fix)
 
 Now whene a user clicks on an item it sets focus on the selected item without the weird reloading and scrolling up the list, Especially if the user contains a lot of elements he would have to scroll the the selected element manually.
+
+**Before**
+
+![](https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/filament-menu-scroll-fix/before.gif)
+
+**After**
+
+![](https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/filament-menu-scroll-fix/after.gif)
 
 ## Installation
 
