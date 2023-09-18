@@ -2,14 +2,14 @@
 
 namespace FilamentMenuScrollFix\FilamentMenuScrollFix;
 
-use Filament\PluginServiceProvider;
+use Filament\Support\Assets\Js;
 use Spatie\LaravelPackageTools\Package;
+use Filament\Support\Facades\FilamentAsset;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class FilamentMenuScrollFixServiceProvider extends PluginServiceProvider
+class FilamentMenuScrollFixServiceProvider extends PackageServiceProvider
 {
-    protected array $scripts = [
-        'filament-menu-scroll-fix' => __DIR__ . '/../dist/script.js',
-    ];
+    public static string $name = 'filament-menu-scroll-fix';
 
     public function configurePackage(Package $package): void
     {
@@ -18,6 +18,14 @@ class FilamentMenuScrollFixServiceProvider extends PluginServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
-        $package->name('filament-menu-scroll-fix');
+        $package->name(static::$name)
+            ->hasAssets();
+
+        FilamentAsset::register(
+            assets: [
+                Js::make(static::$name, __DIR__ . '/../resources/dist/script.js'),
+            ],
+            package: 'ibrahimbougaoua/filament-menu-scroll-fix'
+        );
     }
 }
